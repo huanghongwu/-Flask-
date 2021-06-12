@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../static/js/echarts.min.js"></script>
+		<script src="../static/js/china.js"></script>
+	</head>
+	<body>
+		<div id="main" style="width: 600px;height: 800px;"></div>
+		<script>
+			var ectest = echarts.init(document.getElementById("main"));
+			var optionMap = {  
+			                backgroundColor: '#FFFFFF',  
+			                title: {  
+			                    text: '',  
+			                    subtext: '',  
+			                    x:'left'  
+			                },  
+			                tooltip : {  
+			                    trigger: 'item'  
+			                },  
+			                
+			                //左侧小导航图标
+			                visualMap: {  
+			                    show : true,  
+			                    x: 'left',  
+			                    y: 'bottom', 
+								textStyle: {
+									fontSize: 8,
+								}
+			                    splitList: [   
+			                        {start: 1, end:9},
+									{start: 10, end: 99},  
+			                        {start: 100, end: 999},
+									{start: 1000, end: 9999},  
+			                        {start: 1000}], 
+			                    color: ['#5475f5', '#9feaa5', '#85daef','#74e2ca', '#e6ac53', '#9fb5ea']  
+			                },  
+			                
+			                //配置属性
+			                series: [{  
+			                    name: '数据',  
+			                    type: 'map',  
+			                    mapType: 'china',   
+			                    roam: true,  
+			                    label: {  
+			                        normal: {  
+			                            show: true  //省份名称  
+			                        },  
+			                        emphasis: {  
+			                            show: false  
+			                        }  
+			                    },  
+			                    // data:mydata  //数据
+			                }]  
+			            };  
+			        //初始化echarts实例
+			        // var myChart = echarts.init(document.getElementById('main'));
+			        //使用制定的配置项和数据显示图表
+			ectest.setOption(optionMap);
+			// ectest.setOption(option);
+		</script>
+	</body>
+</html>

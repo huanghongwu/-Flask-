@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my page</title>
+    <script src="../static/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<h1>疫情大数据</h1>
+<button>点我有惊喜</button>
+<script>
+    $("button").click
+    (function()
+    {
+        $.ajax
+        ({
+        "url":'/ajax',
+        "type":'post',
+        "data":{"name":"张三", "score":99},
+        "success":function(d){
+            $("h1").html("武汉感染人数："+d)},
+        "error":function(){
+            alert("发送ajax请求失败")}
+        })
+    }
+    )
+</script>
+
+
+
+</body>
+
+</html>

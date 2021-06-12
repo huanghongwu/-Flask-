@@ -1,0 +1,108 @@
+body{
+	margin: 0;
+	background: #333;
+}
+#title{
+	position: absolute;
+	width: 40%;
+	height: 15%;
+	left: 30%;
+	top: 0;
+	color: white;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#tim{
+	position: absolute;
+	width: 30%;
+	height: 15%;
+	right: 0%;
+	top: 0%;
+	/* background: #11557C; */
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#l1{
+	position: absolute;
+	width: 30%;
+	height: 42.5%;
+	left: 0%;
+	top: 15%;
+	background: #86989B;
+	color: #FAFAFA;
+}
+#l2{
+	position: absolute;
+	width: 30%;
+	height: 42.5%;
+	left: 0%;
+	top: 57.5%;
+	background: #000000;
+	color: #FAFAFA;
+}
+#c1{
+	position: absolute;
+	width: 40%;
+	height: 20%;
+	left: 30%;
+	top: 15%;
+	background: #333;
+	/* color: #FAFAFA; */
+}
+.num {
+	width: 33.33%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: gold;
+	font-size: 20px;
+}
+
+.txt {
+	width: 33.33%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	/* font-family: "幼圆"; */
+}
+
+.txt h2{
+	margin: 0;
+}
+
+#c2{
+	position: absolute;
+	width: 40%;
+	height: 65%;
+	left: 30%;
+	top: 35%;
+	background: #000000;
+	color: #FAFAFA;
+}
+#r1{
+	position: absolute;
+	width: 30%;
+	height: 42.5%;
+	right: 0%;
+	top: 15%;
+	background: #000000;
+	color: #FAFAFA;
+}
+#r2{
+	position: absolute;
+	width: 30%;
+	height: 42.5%;
+	right: 0%;
+	top: 57.5%;
+	background: #000000;
+	color: #FAFAFA;
+}
+
